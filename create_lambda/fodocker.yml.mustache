@@ -1,0 +1,18 @@
+version: 2
+services:
+  lambda:
+    scaling:
+      {{ lambda_id }}_jobs_small: +1
+      {{ lambda_id }}_jobs_big: *2
+      {{ lambda_id }}_no_jobs: -1
+    image: {{ image }}
+alerts:
+  {{ lambda_id }}_jobs_small:
+    {{ lambda_id }}: "between 1 3"
+  {{ lambda_id }}_jobs_big:
+    {{ lambda_id }}: ">3"
+  {{ lambda_id }}_no_jobs:
+    {{ lambda_id }}: "<=0"
+metrics:
+  - name: {{ lambda_id }}
+    interval: 5

@@ -1,0 +1,3 @@
+[submodule "foDocker"]
+	path = foDocker
+	url = https://github.com/foDocker/foDocker.git
