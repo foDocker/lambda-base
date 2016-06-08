@@ -1,3 +1,6 @@
 [submodule "foDocker"]
 	path = foDocker
 	url = https://github.com/foDocker/foDocker.git
+[submodule "lambda-writer"]
+	path = lambda-writer
+	url = https://github.com/foDocker/lambda-writer.git
