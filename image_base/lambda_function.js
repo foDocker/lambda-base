@@ -1,3 +1,3 @@
 module.exports = function(event, context, cb) {
-	cb(null, event);
+	cb(new Error("Lambda function not implemented"));
 };
